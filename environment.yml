@@ -1,0 +1,19 @@
+name: lab7-spark-mllib
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - openjdk=17          # Spark 3.5.x requiere Java 8/11/17; se fija 17 por estabilidad
+  - pyspark=3.5.1
+  - pandas=2.2.*
+  - numpy=1.26.*
+  - matplotlib=3.8.*
+  - openpyxl=3.1.*       # lector de .xlsx (Spark no tiene lector nativo de Excel)
+  - jupyterlab=4.*
+  - notebook=7.*
+  - ipykernel=6.*
+  - pyarrow=15.*         # requerido por Spark para leer/escribir Parquet eficientemente
+  - pip
+  - pip:
+      - nbformat==5.10.4
+      - nbclient==0.10.0
