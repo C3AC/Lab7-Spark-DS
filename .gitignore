@@ -1,1 +1,22 @@
+# macOS
 .DS_Store
+**/.DS_Store
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Entornos locales
+.venv/
+venv/
+env/
+.env
+
+# Salidas generadas por Spark y el notebook
+data/parquet/
+models/
+
+# Archivos auxiliares de Spark/Hadoop
+*.crc
+_SUCCESS
